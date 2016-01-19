@@ -1,0 +1,12 @@
+h2 {
+	color: pink;
+	font-size: 2em;
+}
+
+html {
+	background-color:grey;
+}
+
+a:hover {
+	font-family: Georgia;
+}
