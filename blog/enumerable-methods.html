@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<title>Luis's Blog</title>
+
+</head>
+
+<body>
+<img src="http://www.judy-nolan.com/wp-content/uploads/2014/07/White-canvas-with-outline-1024x191.jpg"> 
+Luis' Blog     <a href="#">About</a>   <a href="#">Contact</a>
+<br>
+<h1>Luis' Blog</h1>
+<br>
+<br>
+<h2>Enumerable#cycle</h2>
+<br>
+<p>
+
+For a moment, imagine that you are in the Tron universe, watching a light cycle battle. The cycles seem to have infinite power and will move until something interrupts and stops them.<br><br>
+
+This is how you can think of the Enumerable cycle method. If you call it but do not pass it any arguments, it will continue forever until it is somehow "crashed" (pressing Ctrl + C).<br><br>
+
+In a similar vein, cycle is a very powerful method that on the surface seems very simple but it can have very complex applications, such as initializing a deck of playing cards.<br><br>
+
+When you want to use cycle, you'll want to pass it a code block so that it can actually accomplish something meaningful. Don't forget to pass it an integer argument so that it knows its limit.<br><br>
+
+Here is a simple example of how you can use cycle<br><br>
+
+<code>
+	chant = ["Hip", "Hip", "Hooray"]<br><br>
+
+	chant.cycle(3) { |m| puts m } <br><br>
+
+	=begin<br>
+	result:<br>
+	Hip<br>
+	Hip<br>
+	Hooray<br>
+	Hip<br>
+	Hip<br>
+	Hooray<br>
+	Hip<br>
+	Hip<br>
+	Hooray<br>
+	=end<br><br>
+
+</code>
+
+Try to think of some other useful things that cycle can do. By doing this, you will expand your programming knowledge and add another method to your toolbox.
+
+</p>
+</body>
+
+</html>
+
+
+
+<!-- 
+- How was it to wireframe and create an HTML page with a pair?
+
+	It was great to collaborate on ideas. I was the driver during the creation of the wireframe and as I drove I made sure to communicate with my peer partner. Using my previous experience in designing blogs, I put together a simple looking blog template and took into account my peer's input. 
+
+- Did you find wireframing to be helpful to your development process?
+
+	Yes, it was like sketching out an idea without diving straight into the code, giving us a design to work from. This was extremely helpful and not something I had previously done. I
+
+- What did you and your pair decide made a good wireframe? 
+
+	A layout that was easy on the eyes, not too complex, and somewhat simple to code to (since we had time constraints)
+
+- What new semantic elements did you learn about (if any)?
+
+	I did not learn any new semantic elements as I have had some experience with HTML
+
+	https://github.com/lrybarra/lrybarra.github.io/imgs/wireframe-blogs.png
+-->
+
+
+
+
