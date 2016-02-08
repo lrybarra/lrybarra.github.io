@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<title>Luis's Blog</title>
+
+</head>
+
+<body>
+<img src="http://www.judy-nolan.com/wp-content/uploads/2014/07/White-canvas-with-outline-1024x191.jpg"> 
+Blog Title     <a href="#">About</a>   <a href="#">Contact</a>
+<br>
+<h1>Luis' Blog</h1>
+<br>
+<br>
+<h2>Ruby Classes</h2>
+<br>
+<p>
+
+In order to visualize a Ruby class we will model a component stereo system<br>
+
+The Stereo class will have attributes make, model, maximum wattage output, and power (on / off).<br>
+
+Our first method, toggle_power will switch the power on and off.<br>
+
+We have methods to increase and decrease volume.<br>
+
+<code><br>
+class Stereo<br><br>
+
+  attr_accessor :make, :model, :max_watts, :power
+
+  def initialize(make, model, wattage, power=false)<br>
+    @make = make<br>
+    @model = model<br>
+    @max_watts = wattage<br>
+    @power = false<br><br>
+
+    @volume = 0<br>
+  end<br><br>
+
+  def toggle_power<br>
+    @power == true ? @power = false : @power = true<br>
+  end<br><br>
+
+  def increase_volume<br>
+    @volume += 1<br>
+  end<br><br>
+
+  def decrease_volume<br>
+    @volume -= 1<br>
+  end<br><br>
+
+end<br>
+</code>
+</p>
+</body>
+
+</html>
+
+
+
+<!-- 
+- How was it to wireframe and create an HTML page with a pair?
+
+	It was great to collaborate on ideas. I was the driver during the creation of the wireframe and as I drove I made sure to communicate with my peer partner. Using my previous experience in designing blogs, I put together a simple looking blog template and took into account my peer's input. 
+
+- Did you find wireframing to be helpful to your development process?
+
+	Yes, it was like sketching out an idea without diving straight into the code, giving us a design to work from. This was extremely helpful and not something I had previously done. I
+
+- What did you and your pair decide made a good wireframe? 
+
+	A layout that was easy on the eyes, not too complex, and somewhat simple to code to (since we had time constraints)
+
+- What new semantic elements did you learn about (if any)?
+
+	I did not learn any new semantic elements as I have had some experience with HTML
+
+	https://github.com/lrybarra/lrybarra.github.io/imgs/wireframe-blogs.png
+-->
+
+
+
+
