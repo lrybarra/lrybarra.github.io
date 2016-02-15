@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<title>Luis's Blog</title>
+
+</head>
+
+<body>
+<img src="http://www.judy-nolan.com/wp-content/uploads/2014/07/White-canvas-with-outline-1024x191.jpg"> 
+Luis' Blog    <a href="#">About</a>   <a href="#">Contact</a>
+<br>
+<h1>Luis' Blog</h1>
+<br>
+<br>
+<h2>Ruby classes vs. JavaScript constructor functions</h2>
+<br>
+<p>
+Recently, I developed a command-line text-based basketball simulator game. I actually ported the code from an older software program I wrote as a teenager to JavaScript. The older program was written in a non-Object Oriented Language and thus I needed to create classes in JavaScript to get all the benefits. <br><br>
+Because I wanted many teams to be created in the game, I used a JavaScript constructor to easily initialize a team and it's Print Roster function.<br>
+After I finished the first version of this game, I decided to port it over to Ruby, which utilizes classes as everything is an object. I needed to remember the proper syntax for class variables and added an <code>@</code> to each of them. In JavaScript, the same thing is accomplished by using the <code>this</code> keyword.<br><br>
+In Ruby, you create an initialize method inside the class but in JavaScript all attributes and functions are contained within the constructor function. I believe that Ruby allows for easier expansion of classes in this way.<br><br>
+You can see my code below for a great comparison of the two.<br>Have a nice day!<br><br>
+<code>
+# Ruby<br><br>
+
+class Team<br>
+<br>
+  def initialize(name, g, f, bck)<br>
+	@name = name<br>
+	@g = g<br>
+	@f = f <br>
+	@bck = bck<br>
+	@games = 0<br>
+	#@color = color<br>
+	@w = 0<br>
+	@l = 0<br>
+	@pts = 0<br>
+	@o_pts = 0<br>
+  end<br>
+<br>
+  def printRoster()<br>
+    # print roster<br>
+  end<br>
+end<br>
+</code>
+<code>
+/* JavaScript */
+function team(name, g, f, bck, color){<br>
+	this.name = name; <br>
+	this.g = g; <br>
+	this.f = f; <br>
+	this.bck = bck; <br>
+	this.games = 0;<br>
+	this.color = color;<br>
+	this.w = 0;<br>
+	this.l = 0;<br>
+	this.pts = 0;<br>
+	this.o_pts = 0;<br>
+	this.printRoster = function(){<br>
+		console.log(this.color,"ROSTER:", this.g.j_no, this.g.name, "&&", this.f.j_no, this.f.name, "&&", this.bck.j_no, this.bck.name, "\n");<br>
+	};<br>
+};<br>
+</code>
+
+</p>
+</body>
+
+</html>
+
+
+
+<!-- 
+- How was it to wireframe and create an HTML page with a pair?
+
+	It was great to collaborate on ideas. I was the driver during the creation of the wireframe and as I drove I made sure to communicate with my peer partner. Using my previous experience in designing blogs, I put together a simple looking blog template and took into account my peer's input. 
+
+- Did you find wireframing to be helpful to your development process?
+
+	Yes, it was like sketching out an idea without diving straight into the code, giving us a design to work from. This was extremely helpful and not something I had previously done. I
+
+- What did you and your pair decide made a good wireframe? 
+
+	A layout that was easy on the eyes, not too complex, and somewhat simple to code to (since we had time constraints)
+
+- What new semantic elements did you learn about (if any)?
+
+	I did not learn any new semantic elements as I have had some experience with HTML
+
+	https://github.com/lrybarra/lrybarra.github.io/imgs/wireframe-blogs.png
+-->
+
+
+
+
