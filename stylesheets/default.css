@@ -47,6 +47,17 @@ h3 {
 	text-transform: lowercase;
 }
 
+h4 {
+	font-family: 'Playfair Display';
+	text-align: center;
+	font-weight: 300;
+	font-size: 4.2em;
+	font-style: normal;
+	line-height: 0.9em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em !important;
+   }
+
 header {
 	/*display:block;*/
 }
